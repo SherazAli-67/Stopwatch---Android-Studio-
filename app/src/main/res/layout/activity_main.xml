@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/light_white">
+
+    <TextView
+        android:layout_width="112dp"
+        android:layout_height="42dp"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/arvo"
+        android:gravity="center"
+        android:text="Stopwatch"
+        android:textSize="20dp"
+        android:textStyle="bold"></TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/timer_cicle"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/arvo"
+            android:gravity="center"
+            android:text="00:12:00"
+            android:textColor="@color/light_brown"
+            android:textSize="28dp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_draw"
+            android:fontFamily="@font/arvo"
+            android:text="Reset"
+            android:id="@+id/reset"
+            android:onClick="onResetClick"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"></Button>
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:background="@drawable/btn_draw"
+            android:fontFamily="@font/arvo"
+            android:onClick="onStartClick"
+            android:text="Start"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:background="@drawable/btn_draw"
+            android:fontFamily="@font/arvo"
+            android:text="Stop"
+            android:visibility="gone"
+            android:id="@+id/stop"
+            android:onClick="onStopClick"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"></Button>
+
+    </LinearLayout>
+</LinearLayout>
